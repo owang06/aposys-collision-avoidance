@@ -1,0 +1,18 @@
+# name: wheels
+# on: [push, pull_request, workflow_dispatch]
+
+# jobs:
+#   build:
+#     runs-on: ${{ matrix.os }}
+#     strategy:
+#       matrix:
+#         os: [ubuntu-latest, windows-latest, macos-latest]
+#         python: ["3.9", "3.10", "3.11", "3.12"]
+
+#     steps:
+#     - uses: actions/checkout@v4
+#     - uses: pypa/cibuildwheel@v2.18.0   # latest stable  :contentReference[oaicite:2]{index=2}
+#       env:
+#         CIBW_BUILD: cp${{ matrix.python }}-*
+#         CIBW_SKIP: "*-musllinux_*"       # example skip rule
+#         CIBW_ARCHS_LINUX: "x86_64 aarch64"

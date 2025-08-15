@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+  "scikit-build-core>=0.9",
+  "pybind11",
+  "eigen-headers"
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "collision_geom"
+version = "0.1.0"
+authors = [
+  { name = "ApoSysTeam", email = "dev@your.org" }
+]
+description = "Fast swept‑sphere collision checker for 3D point clouds"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+
+[tool.scikit-build]
+wheel.packages = ["collision_geom"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=6.0",
+  "open3d"
+]

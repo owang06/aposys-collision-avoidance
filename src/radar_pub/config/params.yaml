@@ -1,0 +1,8 @@
+radar_pub:
+ ros__parameters:
+  poll_frequency: 0.005 # secs
+  radar_cycle_time: 0.06 # per sensor specifications seconds
+  bitrate: "500K" # see radar_can.py under 'bitrate lookup tables'
+  device_type: 3 # see radar_can.py under 'Constants (device types)'
+  visualise: false
+  use_pointcloud: false

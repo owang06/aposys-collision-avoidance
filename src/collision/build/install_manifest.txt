@@ -1,0 +1,3 @@
+/home/aposys2/Documents/CollisionAvoidance/install/local/lib/python3.10/site-packages/collision_geom.cpython-310-x86_64-linux-gnu.so
+/home/aposys2/Documents/CollisionAvoidance/install/local/include/collision/body_spheres.hpp
+/home/aposys2/Documents/CollisionAvoidance/install/local/include/collision/algo.hpp
